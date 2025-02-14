@@ -9,7 +9,7 @@ const checkWorkingHours = (req, res, next) => {
   const hour = now.getHours();
 
   const isWorkingDay = day >= 1 && day <= 5;
-  const isWorkingHour = hour >= 8 && hour < 17;
+  const isWorkingHour = hour >= 9 && hour < 17;
 
   if (isWorkingDay && isWorkingHour) {
     next();
